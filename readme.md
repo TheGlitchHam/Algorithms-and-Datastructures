@@ -4,3 +4,6 @@
 
 - Have Python installed
 - Clone Repo
+- python -m venv <env-name>
+- Activate the environment: <env-name>\Scripts\activate
+- pip install
