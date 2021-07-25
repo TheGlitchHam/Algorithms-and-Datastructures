@@ -7,6 +7,8 @@ def merge_sort(list):
     1. Divide: Find the midpoint of the list and divide into sublists
     2. Conquer: Recursivly sort the sublists created in previous step
     3. Combine: Merge the sorted sublists created in previous steps
+
+    Takes O(kn log n) time
     """
 
     if len(list) <= 1:
@@ -22,8 +24,13 @@ def split(list):
     """
     Divide the unsorted list at midpoint into sublists
     Returns two sublists - left and right
+    Takes O(k log n) time (k -> the size of the slice)
     """
     mid = len(list)//2
+
+
+    #TODO Implementierung von split als rekursive methode, wie bei binary search -> Hierdurch kann k eliminiert werden!
+    # https://teamtreehouse.com/library/introduction-to-data-structures/the-merge-sort-algorithm/alternate-versions-of-merge-sort
     left = list[:mid]
     right = list[mid:]
 
@@ -34,6 +41,8 @@ def merge(left, right):
     """
     Merges two lists, sorting them in the process
     Returns a new merged list
+
+    Runs in overall O(n) time
     """
 
     l = []
