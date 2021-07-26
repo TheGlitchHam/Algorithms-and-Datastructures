@@ -18,7 +18,8 @@ def merge_sort(list):
     left = merge_sort(left_half)
     right = merge_sort(right_half)
 
-    return merge(left,right)
+    return merge(left, right)
+
 
 def split(list):
     """
@@ -27,10 +28,6 @@ def split(list):
     Takes O(k log n) time (k -> the size of the slice)
     """
     mid = len(list)//2
-
-
-    #TODO Implementierung von split als rekursive methode, wie bei binary search -> Hierdurch kann k eliminiert werden!
-    # https://teamtreehouse.com/library/introduction-to-data-structures/the-merge-sort-algorithm/alternate-versions-of-merge-sort
     left = list[:mid]
     right = list[mid:]
 
@@ -57,19 +54,15 @@ def merge(left, right):
             l.append(right[j])
             j += 1
 
-
     while i < len(left):
         l.append(left[i])
         i += 1
-
-
 
     while j < len(right):
         l.append(right[j])
         j += 1
 
     return l
-    
 
 
 def verify_sorted(list):
@@ -79,6 +72,6 @@ def verify_sorted(list):
     return list[0] <= list[1] and verify_sorted(list[1:])
 
 
-test_list = [4,123,5,6,45,76,345,23,5,543,47,6,4572,57]
+test_list = [4, 123, 5, 6, 45, 76, 345, 23, 5, 543, 47, 6, 4572, 57]
 sorted_list = merge_sort(test_list)
 print(verify_sorted(sorted_list), ": ", sorted_list)
