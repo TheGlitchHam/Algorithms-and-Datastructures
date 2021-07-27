@@ -9,14 +9,15 @@ class Node():
         self.data = data
 
     def __repr__(self):
-        return "<Node data: %s>" %self.data
+        return "<Node data: %s>" % self.data
+
 
 class LinkedList:
     """
     Singly linked list
     """
     head = None
-    
+
     def __init_(self):
         self.head = None
 
@@ -32,7 +33,7 @@ class LinkedList:
         current = self.head
         count = 0
         while current:
-            count +=1
+            count += 1
             current = current.next_node
         return count
 
@@ -74,7 +75,7 @@ class LinkedList:
             self.add(data)
         if index > 0:
             new = Node(data)
-            position = index 
+            position = index
             current = self.head
 
             while position > 1:
@@ -123,12 +124,12 @@ class LinkedList:
             position = index
             prev_node = None
 
-            #get previous node
-            while position>=1:
+            # get previous node
+            while position >= 1:
                 prev_node = current
                 current = current.next_node
-                position -=1
-            
+                position -= 1
+
             prev_node.next_node = current.next_node
             return current
 
@@ -140,8 +141,8 @@ class LinkedList:
         """
         if index == 0:
             return self.head
-        current = self.head
         if index > 0:
+            current = self.head
             while index > 0:
                 current = current.next_node
                 index -= 1

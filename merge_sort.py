@@ -9,6 +9,8 @@ def merge_sort(list):
     3. Combine: Merge the sorted sublists created in previous steps
 
     Takes O(kn log n) time
+
+    Space complexity is O(n)
     """
 
     if len(list) <= 1:
