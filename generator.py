@@ -10,7 +10,7 @@ def generate_name_file(file_name, size):
 
 
 def generate_numbers_file(file_name, size):
-    numbers_list = random.sample(range(0, 1000), size)
+    numbers_list = random.sample(range(0, size*10), size)
     generate_file(file_name, numbers_list)
 
 
@@ -21,4 +21,5 @@ def generate_file(file_name, list):
 
 
 # generate_numbers_file("100.txt", 100)
-generate_name_file("names.txt", 100)
+# generate_name_file("names.txt", 100)
+generate_numbers_file("10000.txt", 10000)
