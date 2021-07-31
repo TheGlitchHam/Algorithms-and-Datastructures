@@ -24,5 +24,5 @@ def generate_file(file_name, list):
             f.write(str(item) + "\n")
 
 
-# generate_name_file("names.txt", 100)
-generate_numbers_file("1000000.txt", 1000000)
+generate_name_file("names.txt", 100000)
+# generate_numbers_file("1000000.txt", 1000000)
