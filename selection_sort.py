@@ -1,7 +1,7 @@
 import sys
 from load import load_numbers
 
-numbers = load_numbers("10000.txt")
+numbers = load_numbers(sys.argv[1])
 
 
 def selection_sort(list):
