@@ -14,6 +14,9 @@ Steps:
 2. Split into two sublists, [] <= pivot < []
 3. Recursive quicksort on both sublists
 4. Return quicksorted lists and merge them with pivot in the middle
+
+Runtime: O(n²) at worst, O(n log n)
+However, quicksort often performs at best case speed
 """
 
 
