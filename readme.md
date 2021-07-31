@@ -10,4 +10,4 @@ https://www.youtube.com/watch?v=8hly31xKli0
 - Clone Repo
 - python -m venv <env-name>
 - Activate the environment: <env-name>\Scripts\activate
-- pip install
+- pip install -r requirements.txt
