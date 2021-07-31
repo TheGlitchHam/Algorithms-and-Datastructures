@@ -1,6 +1,10 @@
 import random
 import names
 
+'''
+Python script for generating files containing large unsorted numbers or names
+'''
+
 
 def generate_name_file(file_name, size):
     name_list = []
@@ -20,6 +24,5 @@ def generate_file(file_name, list):
             f.write(str(item) + "\n")
 
 
-# generate_numbers_file("100.txt", 100)
 # generate_name_file("names.txt", 100)
-generate_numbers_file("10000.txt", 10000)
+generate_numbers_file("1000000.txt", 1000000)
